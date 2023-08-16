@@ -1,0 +1,135 @@
+:root {
+  --maincolor: #102c57;
+  --secondary: #67c9cb;
+  --fontcolor: white;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+body {
+  background-color: var(--fontcolor);
+  margin: 0%;
+  text-align: center;
+  display: inline;
+}
+
+.intro {
+  background: var(--maincolor);
+  display: flex;
+  justify-content: center;
+  color: var(--fontcolor);
+}
+.head-text {
+  margin-top: 50px;
+}
+
+#img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+.hi {
+  color: var(--secondary);
+  font-size: xx-large;
+}
+.cimg {
+  width: 20px;
+  height: 20px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info {
+  color: var(--maincolor);
+  width: 90%;
+  margin: auto;
+}
+#contacttxt {
+  margin-right: 8%;
+}
+.skillcont {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skilltxt {
+  margin-right: 7%;
+}
+
+.javascript {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.animation {
+  width: 80px;
+  height: 80px;
+}
+.bioimg {
+  height: 90%;
+  width: 40%;
+}
+.bio {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.biotxt {
+  width: 50%;
+}
+
+.bioimg2 {
+  height: 90%;
+  width: 40%;
+}
+.bio2 {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.biotxt2 {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .skillcont {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bio2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  .biotxt {
+    width: 50%;
+    margin: auto;
+  }
+  .biotxt2 {
+    width: 50%;
+    margin: auto;
+  }
+}
